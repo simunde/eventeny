@@ -1,9 +1,5 @@
 <!-- app/Views/application_types/create.php -->
-<?php include __DIR__ . '/../common/header.php'; ?>
-
-<h1>Organizer Dashboard</h1>
-<h2>Create Application Type</h2>
-<form action="/create_application_type.php" method="POST">
+<form action="/create_application_type.php" method="POST" class="organizer-form">
     <label for="title">Title:</label>
     <input type="text" id="title" name="title" required><br>
 
