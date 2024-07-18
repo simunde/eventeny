@@ -22,7 +22,7 @@ header {
 }
 
 .logo {
-  max-height: 40px; /* Adjust the max-height as needed */
+  max-height: 40px;
   height: auto;
   width: auto;
 }
@@ -45,41 +45,78 @@ nav a:hover {
 
 h1 {
   color: #333;
+  text-align: center;
 }
 
-form {
-  background: #fff;
+.track-status-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 600px;
+  margin: 20px auto;
   padding: 20px;
+  background: #fff;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-label {
-  display: block;
-  margin-bottom: 5px;
+.track-status-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
-input[type="text"],
-input[type="email"],
-textarea,
-input[type="date"],
-select {
+.track-status-form label {
+  margin-bottom: 5px;
+  text-align: center; /* Center align the label text */
   width: 100%;
-  padding: 8px;
-  margin-bottom: 10px;
+}
+
+.track-status-form .email-input {
+  padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  font-size: 16px;
+  width: 80%; /* Adjust the width as needed */
+  max-width: 300px; /* Set a maximum width */
 }
 
-input[type="submit"] {
+.track-status-form .submit-button {
   background: #28a745;
   color: #fff;
-  padding: 10px 15px;
+  padding: 10px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  font-size: 16px;
+  width: 150px;
+  margin-top: 10px; /* Add some margin to separate from the input */
+  align-self: center;
 }
 
-input[type="submit"]:hover {
+.track-status-form .submit-button:hover {
   background: #218838;
+}
+
+.status-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.status-table th,
+.status-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.status-table th {
+  background-color: #f2f2f2;
+}
+
+.status-table tr:nth-child(even) {
+  background-color: #f9f9f9;
 }
