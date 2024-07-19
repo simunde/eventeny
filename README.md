@@ -57,3 +57,17 @@ Eventeny application helps to create applications, manage vendor applications an
 ```
   docker compose down
 ```
+
+6. Database
+
+- The application uses MySQL as the database. The necessary tables and initial data are set up using the init.sql file.
+
+## Notes
+
+- Make sure the init.sql file is correctly placed in the root directory to initialize the database correctly.
+- The project is configured to use the db_data Docker volume for persistent storage of the MySQL database. If you need to reset the database, you can remove the volume using:
+
+```
+  docker volume rm eventeny_db_data
+
+```
