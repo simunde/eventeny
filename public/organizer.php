@@ -8,36 +8,33 @@ $application_types = $controller->list();
 
 <link rel="stylesheet" type="text/css" href="/styles_organizer.css">
 
-<div class="organizer-container">
+<div class="form-container">
     <h1>Organizer Dashboard</h1>
-    <div class="organizer-form">
-        <h2>Create Application Type</h2>
-        <form action="/create_application_type.php" method="POST">
-            <div class="form-group">
-                <label for="title">Title:</label>
-                <input type="text" id="title" name="title" required>
-            </div>
-            <div class="form-group">
-                <label for="description">Description:</label>
-                <textarea id="description" name="description" required></textarea>
-            </div>
-            <div class="form-group">
-                <label for="deadline">Deadline:</label>
-                <input type="date" id="deadline" name="deadline" required>
-            </div>
-            <div class="form-group">
-                <label for="cover_photo">Cover Photo URL:</label>
-                <input type="text" id="cover_photo" name="cover_photo" required>
-            </div>
-            <div class="form-group">
-                <label for="address">Address:</label>
-                <input type="text" id="address" name="address" required>
-            </div>
-            <div class="submit-container">
-                <input type="submit" value="Create">
-            </div>
-        </form>
-    </div>
+    <form action="/create_application_type.php" method="POST">
+        <div class="form-group">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required>
+        </div>
+        <div class="form-group">
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="deadline">Deadline:</label>
+            <input type="date" id="deadline" name="deadline" required>
+        </div>
+        <div class="form-group">
+            <label for="cover_photo">Cover Photo URL:</label>
+            <input type="text" id="cover_photo" name="cover_photo" required>
+        </div>
+        <div class="form-group">
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" required></textarea>
+        </div>
+        <div class="submit-container">
+            <input type="submit" value="Create">
+        </div>
+    </form>
 
     <div class="application-list">
         <h2>Existing Application Types</h2>
