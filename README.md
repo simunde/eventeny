@@ -2,7 +2,7 @@
 
 ## Overview
 
-Foodventeny is a local festival organization that hosts a Memorial Day food truck festival. This application helps manage vendor applications and expand the festival.
+Eventeny application helps to create applications, manage vendor applications and expand the event management.
 
 ## Features
 
