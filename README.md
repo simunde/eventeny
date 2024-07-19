@@ -4,6 +4,13 @@
 
 Eventeny application helps to create applications, manage vendor applications and expand the event management.
 
+## Screenshots
+
+![Organizer Dashboard](public/images/organize.png)
+![Organizer Dashboard](public/images/application.png)
+![Organizer Dashboard](public/images/track_status.png)
+![Organizer Dashboard](public/images/manage_status.png)
+
 ## Features
 
 - **Event Organizer Side**
