@@ -10,7 +10,7 @@ class ApplicationTypeController {
     }
 
     public function create() {
-        $this->model->create($_POST['title'], $_POST['description'], $_POST['deadline'], $_POST['cover_photo']);
+        $this->model->create($_POST['title'], $_POST['description'], $_POST['deadline'], $_POST['cover_photo'], $_POST['address']);
         header('Location: /organizer.php');
     }
 

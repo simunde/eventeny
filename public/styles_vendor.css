@@ -52,7 +52,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 600px;
+  max-width: 800px;
   margin: 20px auto;
   padding: 20px;
   background: #fff;
@@ -64,19 +64,35 @@ h1 {
   width: 100%;
 }
 
+.form-container .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
 .form-container label {
-  display: block;
   margin-bottom: 5px;
 }
 
 .form-container input[type="text"],
 .form-container input[type="email"],
-.form-container select {
+.form-container select,
+.form-container textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
+}
+
+.form-container textarea {
+  resize: none;
+}
+
+.submit-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .form-container input[type="submit"] {
@@ -87,7 +103,7 @@ h1 {
   border-radius: 4px;
   cursor: pointer;
   display: block;
-  width: 100%;
+  width: 50%;
   text-align: center;
 }
 

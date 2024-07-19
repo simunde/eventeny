@@ -7,9 +7,9 @@ class ApplicationType {
         $this->pdo = $pdo;
     }
 
-    public function create($title, $description, $deadline, $cover_photo) {
-        $stmt = $this->pdo->prepare('INSERT INTO application_types (title, description, deadline, cover_photo) VALUES (?, ?, ?, ?)');
-        $stmt->execute([$title, $description, $deadline, $cover_photo]);
+    public function create($title, $description, $deadline, $cover_photo, $address) {
+        $stmt = $this->pdo->prepare('INSERT INTO application_types (title, description, deadline, cover_photo, address) VALUES (?, ?, ?, ?, ?)');
+        $stmt->execute([$title, $description, $deadline, $cover_photo, $address]);
     }
 
     public function getAll() {

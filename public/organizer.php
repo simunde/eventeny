@@ -29,6 +29,10 @@ $application_types = $controller->list();
                 <label for="cover_photo">Cover Photo URL:</label>
                 <input type="text" id="cover_photo" name="cover_photo" required>
             </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+            </div>
             <div class="submit-container">
                 <input type="submit" value="Create">
             </div>
@@ -39,7 +43,7 @@ $application_types = $controller->list();
         <h2>Existing Application Types</h2>
         <ul>
             <?php foreach ($application_types as $type): ?>
-                <li><?= htmlspecialchars($type['title']) ?> - <?= htmlspecialchars($type['description']) ?> (Deadline: <?= htmlspecialchars($type['deadline']) ?>)</li>
+                <li><?= htmlspecialchars($type['title']) ?> - <?= htmlspecialchars($type['description']) ?> (Deadline: <?= htmlspecialchars($type['deadline']) ?>, Address: <?= htmlspecialchars($type['address']) ?>)</li>
             <?php endforeach; ?>
         </ul>
     </div>

@@ -3,7 +3,8 @@ CREATE TABLE application_types (
     title VARCHAR(255) NOT NULL,
     description TEXT,
     deadline DATE,
-    cover_photo TEXT
+    cover_photo TEXT,
+    address VARCHAR(255) 
 );
 
 CREATE TABLE applications (
