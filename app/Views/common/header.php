@@ -3,11 +3,11 @@
 <html>
 <head>
     <title>Organizer Dashboard</title>
-    <link rel="stylesheet" type="text/css" href="/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <?php 
     // Determine the current script name and include the corresponding CSS file
     $script_name = basename($_SERVER['SCRIPT_NAME'], '.php');
-    if (file_exists(__DIR__ . "/../../public/styles_$script_name.css")) {
+    if (file_exists(__DIR__ . "/../../public/css/styles_$script_name.css")) {
         echo '<link rel="stylesheet" type="text/css" href="/styles_' . $script_name . '.css">';
     }
     ?>

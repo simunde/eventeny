@@ -6,7 +6,7 @@ $controller = new ApplicationTypeController();
 $application_types = $controller->list();
 ?>
 
-<link rel="stylesheet" type="text/css" href="/styles_organizer.css">
+<link rel="stylesheet" type="text/css" href="css/styles_organizer.css">
 
 <div class="form-container">
     <h1>Organizer Dashboard</h1>

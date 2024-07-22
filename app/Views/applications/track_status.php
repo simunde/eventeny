@@ -1,6 +1,8 @@
 <!-- app/Views/applications/track_status.php -->
 <?php include __DIR__ . '/../common/header.php'; ?>
 
+<link rel="stylesheet" type="text/css" href="/css/styles_track_status.css">
+
 <div class="track-status-container">
     <h1>Track Application Status</h1>
     <form action="/track_status.php" method="POST" class="track-status-form">

@@ -6,7 +6,7 @@ $controller = new ApplicationTypeController();
 $application_types = $controller->list();
 ?>
 
-<link rel="stylesheet" type="text/css" href="/styles_vendor.css">
+<link rel="stylesheet" type="text/css" href="css/styles_vendor.css">
 
 <div class="form-container">
     <h1>Vendor Application</h1>

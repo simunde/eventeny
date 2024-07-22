@@ -6,7 +6,7 @@ $controller = new ApplicationController();
 $applications = $controller->list();
 ?>
 
-<link rel="stylesheet" type="text/css" href="/styles_view_applications.css">
+<link rel="stylesheet" type="text/css" href="css/styles_view_applications.css">
 
 <div class="status-container">
     <h1>View Applications</h1>
