@@ -4,6 +4,7 @@
 <head>
     <title>Organizer Dashboard</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <?php 
     // Determine the current script name and include the corresponding CSS file
     $script_name = basename($_SERVER['SCRIPT_NAME'], '.php');
